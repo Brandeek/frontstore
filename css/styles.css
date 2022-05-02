@@ -1,3 +1,46 @@
-:root{
-    
+:root {
+    --blanco: #ffffff;
+    --rojo: #7a0202;
+    --primario: #4bccc1;
+    --secundario: #9b69a5;
+    --negro: #000000;
+    --grisClaro: #919191;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;  /*1 rem = 10px*/
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/*Encabezado*/
+.header{
+    display: flex;
+    justify-content: center;
 }
