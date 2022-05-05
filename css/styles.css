@@ -1,7 +1,7 @@
 :root {
     --blanco: #ffffff;
-    --rojo: #7a0202;
-    --primario: #4bccc1;
+    --primario: #ca5db3;
+    --celeste: #4bccc1;
     --secundario: #9b69a5;
     --negro: #000000;
     --grisClaro: #919191;
@@ -20,6 +20,7 @@ html {
 
 body {
     font-size: 16px;  /*1 rem = 10px*/
+    background-color: var(--primario);
 }
 
 h1 {
@@ -40,7 +41,19 @@ h3 {
 }
 
 /*Encabezado*/
-.header{
+.encabezado{
     display: flex;
     justify-content: center;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    background-color: var(--secundario);
+    padding: 1rem;
+}
+
+.navegacion__enlace{
+    text-decoration: none;
 }
