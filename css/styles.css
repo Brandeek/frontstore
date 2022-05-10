@@ -38,6 +38,10 @@ h3 {
     font-size: 1.8rem;
 }
 
+img{
+    width: 100%;
+}
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -102,4 +106,37 @@ h3 {
 
 .articulo__datos--precio{
     color: var(--amarillo);
+}
+
+
+/*falta practicar propiedades que estan en clase .grafico*/
+.grafico{
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30rem;
+    grid-column: 1/3;
+}
+
+.grafico__uno{
+    background-image: url(../img/grafico1.jpg);
+    grid-row: 2/3;
+}
+
+.grafico__dos{
+    background-image: url(../img/grafico2.jpg);
+    grid-row: 8/9;
+}
+
+@media(min-width: 768px) {
+    .grafico__dos{
+        grid-row: 5/6;
+        grid-column: 2/4;
+    }
+}
+
+.footer{
+    color: var(--blanco);
+    background-color: var(--secundario);
+    padding: 1rem;
+    text-align: center;
 }
